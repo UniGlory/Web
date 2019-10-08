@@ -22,89 +22,31 @@
 <html>
 
 <head>
-    <!-- <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" /> -->
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-    <!-- Good default declaration:
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-        * Enable inline JS: add 'unsafe-inline' to default-src
-        * Enable eval(): add 'unsafe-eval' to default-src
-    * Create your own at http://cspisawesome.com
-    -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
-
-    <!-- <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title> -->
-
-    <meta charset="utf-8">
-    <title>Ratchet template page</title>
-
-    <!-- Sets initial viewport load and disables zooming  -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-
-    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-    <!-- Include the compiled Ratchet CSS -->
-    <link href="vender/ratchet/dist/css/ratchet.css" rel="stylesheet">
-
-    <!-- Include the compiled Ratchet JS -->
-    <script src="vender/ratchet/dist/js/ratchet.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鬼滅之刃</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body>
-    <!-- <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
+    <div data-role="page">
+        <div data-role="header" style="text-align: center;color: #0066ff;">
+          <h1>鬼滅之刃</h1>
         </div>
-    </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script> -->
-    <!-- Make sure all your bars are the first things in your <body> -->
-        <header class="bar bar-nav">
-            <h1 class="title">Ratchet</h1>
-          </header>
       
-          <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
-          <div class="content">
-            <img src="img/DemoSalyer.jpg" width=1000px>
-            <p class="content-padded">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resources:</p>
-            <div class="card">
-              <ul class="table-view">
-                <li class="table-view-cell">
-                  <a class="push-right" href="http://goratchet.com">
-                    <strong>登場人物</strong>
-                  </a>
-                </li>
-                <li class="table-view-cell">
-                  <a class="push-right" href="https://github.com/twbs/ratchet/">
-                    <strong>Ratchet on Github</strong>
-                  </a>
-                </li>
-                <li class="table-view-cell">
-                  <a class="push-right" href="https://groups.google.com/forum/#!forum/goratchet">
-                    <strong>Ratchet Google group</strong>
-                  </a>
-                </li>
-                <li class="table-view-cell">
-                  <a class="push-right" href="https://twitter.com/goratchet">
-                    <strong>Ratchet on Twitter</strong>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div role="main" class="ui-content">
+          <img src="img/DemoSalyer.jpg" width="100%">
+          <p>《鬼滅之刃》（日語：鬼滅の刃）是由日本漫畫家吾峠呼世晴所創作的日本漫畫作品，於《週刊少年Jump》2016年11號開始連載中。以大正時代為故事舞台，講述了主角竈門炭治郎全家被鬼殺害，為了尋求唯一倖存但被鬼化的妹妹變回人的方法，踏上了斬鬼之旅所描寫的純和風劍戟奇譚。
+
+              至2019年9月止，日本地區漫畫單行本累計發行量已突破1000萬本。</p>
+        </div><!-- /content -->
+        <a href="./page1.html" class="ui-btn">人物介紹</a>
+        <a href="./page2.html" class="ui-btn">名詞解說</a>
+</div><!-- /page -->
 </body>
 
 </html>
